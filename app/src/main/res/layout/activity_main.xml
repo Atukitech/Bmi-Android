@@ -9,28 +9,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <!--- TITLE-->
-    <TextView
-        android:id="@+id/titleId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="BMI CALCULATOR"
-        android:textColor="@color/pink"
-        android:textSize="30sp"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:textStyle="bold"/>
+    <!--- START-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
         android:background="#2C00B8D4"
         android:orientation="vertical">
-<!-- Height-->
+        <!--- TITLE-->
+        <TextView
+            android:id="@+id/titleId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI CALCULATOR"
+            android:textColor="@color/pink"
+            android:textSize="30sp"
+            android:layout_marginTop="60dp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+        <!---NAME Result-->
+        <TextView
+            android:id="@+id/resultTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+<!--        &lt;!&ndash; AGE RESULT&ndash;&gt;-->
+
+        <TextView
+            android:id="@+id/resultTV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+<!--        AGE RESULT-->
+
+
+
+
+
+        <!-- Height-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginVertical="10dp"
             android:padding="20dp"
             android:text="Enter your height in Meter"
             android:textAlignment="center"
@@ -43,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter your Height(meter)"
-            android:paddingHorizontal="20dp">
+            android:paddingHorizontal="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/heightET"
@@ -67,21 +99,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginVertical="10dp"
             android:text="Enter your weight in Kg"
             android:textAlignment="center"
             android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
             android:padding="20dp"
             android:textSize="20sp"
             android:textStyle="bold" />
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/weightTIL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:hint="Enter your weight(KG)">
-
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/weightET"
                 android:layout_width="match_parent"
@@ -92,17 +123,8 @@
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
-<!--Button-->
-    <Button
-        android:id="@+id/calculateBtn"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
 
-        android:layout_weight="1"
-        android:backgroundTint="@color/pink"
-        android:text="Calculate" />
+    <!--CALCULATE Button-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -152,8 +174,40 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:padding="8dp"/>
-
     </LinearLayout>
 
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
+    <Button
+        android:id="@+id/calculcateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/pink"
+        android:text="Calculate" />
+
+
+
+
+
+    <!--CALCULATE Signout Button-->
+
+    <Button
+        android:id="@+id/signoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/pink"
+        android:text="Signout" />
+
+</LinearLayout>
 </LinearLayout>

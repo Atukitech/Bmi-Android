@@ -10,6 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WelcomePage">
+
     <TextView
         android:id="@+id/titleId"
         android:layout_width="match_parent"
@@ -17,15 +18,47 @@
         android:text="BMI CALCULATOR"
         android:textColor="@color/pink"
         android:textSize="30sp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:textStyle="bold"/>
+
     <ImageView
         android:src="@drawable/bmi"
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="400dp">
     </ImageView>
+    <!---  NAME-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Enter your Name">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+<!--&lt;!&ndash; AGE&ndash;&gt;-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ageTIl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Enter your Age">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ageET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <!--Button-->
     <Button
         android:id="@+id/nextBtn"
